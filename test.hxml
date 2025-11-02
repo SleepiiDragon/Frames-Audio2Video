@@ -1,0 +1,5 @@
+build.hxml
+--cmd copy stuff.py testEnv\stuff.py
+--cmd cd testEnv
+--cmd python stuff.py --INFOJSON!mrow.json
+--cmd cd ../
