@@ -1,0 +1,9 @@
+{
+    "frameNames": "FRAMENAME",
+    "frameFormat": "png",
+    "frame0sAmt": 8,
+    "fps": 15,
+    "audioName": "woa.wav",
+    "folder": "testing",
+    "outFile": "out.mp4"
+}

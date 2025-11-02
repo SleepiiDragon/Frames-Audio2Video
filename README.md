@@ -21,3 +21,4 @@ and lastly, yes the code is very ass
     "outFile": "out.mp4" //the out file of all this, usually u want it in a format WITH video, i guess
 }
 ```
+## that example can be found [here](example.json)

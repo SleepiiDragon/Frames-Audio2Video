@@ -40,9 +40,6 @@ class Main{
         if(!argEnd.exists("INFOJSON")){
             throw("no infojson!");
         }
-
-        //Sys.command("cd", [argEnd.get("INFOJSON")]);
-        //trace(argEnd.get("INFOJSON"));
         
         var jsonpath = "./" + argEnd.get("INFOJSON");
         if(FileSystem.exists(jsonpath)){
