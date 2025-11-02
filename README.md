@@ -6,8 +6,8 @@ yes its just a personal project for me that fits my own personal needs.
 and lastly, yes the code is very ass  
 
 # TO USE:  
-`FNA2V.py --INFOJSON!info.json`  
-("info.json" should be your info json)  
+`FNA2V.py --INFOJSON![FileName].json`  
+("[FileName]" should be your json file name)  
 
 # EXAMPLE JSON:  
 ```json
