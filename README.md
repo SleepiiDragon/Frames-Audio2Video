@@ -5,7 +5,7 @@ yes it uses FFMPEG,
 yes its just a personal project for me that fits my own personal needs.  
 and lastly, yes the code is very ass  
 
-```
+```json
 {
     "frameNames": "FRAMENAME", //name of each frame, examp: ["MEOW01.png", "MEOW02.png"]
     "frameFormat": "png", //file format of each frame.
