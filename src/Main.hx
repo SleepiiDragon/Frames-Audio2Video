@@ -24,8 +24,6 @@ class Main{
     public static function main(){
         var args = Sys.args();
         for(arg in args){
-            //Sys.println(arg);
-            //var realArg = arg
             var argSplitted = arg.split("!");
             if(argSplitted.length > 1){
                 var argFirst = argSplitted[0];
