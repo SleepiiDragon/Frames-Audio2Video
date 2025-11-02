@@ -20,5 +20,5 @@ and lastly, yes the code is very ass
     "folder": "testing", //the folder this is all in.
     "outFile": "out.mp4" //the out file of all this, usually u want it in a format WITH video, i guess
 }
-```
-## that example can be found [here](example.json)
+```  
+## that example can be found [here](example.json)  
