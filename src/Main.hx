@@ -35,6 +35,15 @@ class Main{
             }
         }
 
+        //whatever it can be better but i just dont fuckin care -.-
+        if(args[0] == "help" || args[0] == "-help" || args[0] == "--help" || args.length == 0){
+            Sys.println("TO USE:");
+            Sys.println("python FNA2V.py --INFOJSON![FileName].json");
+            Sys.println("(replace \"[FileName]\" with the name of ur .json file)");
+
+            return;
+        }
+
         if(!argEnd.exists("INFOJSON")){
             throw("no infojson!");
         }
@@ -72,11 +81,5 @@ class Main{
         }else{
             throw("json dont exist!");
         }
-
-        if(args[0] == "HELP"){
-            Sys.println("TO BE DONE!");
-            return;
-        }
-
     }
 }
