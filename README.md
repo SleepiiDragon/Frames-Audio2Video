@@ -5,7 +5,11 @@ yes it uses FFMPEG,
 yes its just a personal project for me that fits my own personal needs.  
 and lastly, yes the code is very ass  
 
-EXAMPLE JSON:  
+# TO USE:  
+`FNA2V.py --INFOJSON!info.json`  
+("info.json" should be your info json)  
+
+# EXAMPLE JSON:  
 ```json
 {
     "frameNames": "FRAMENAME", //name of each frame, examp: ["FRAMENAME.png", "FRAMENAME.png"]

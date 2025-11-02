@@ -1,7 +1,3 @@
-/**
-    toVideo.exe --INFOJSON!mrow.json
-**/
-
 import haxe.Json;
 import sys.FileSystem;
 import sys.io.File;

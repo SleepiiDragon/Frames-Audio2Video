@@ -1,5 +1,5 @@
 build.hxml
---cmd copy stuff.py testEnv\stuff.py
+--cmd copy FNA2V.py testEnv\FNA2V.py
 --cmd cd testEnv
---cmd python stuff.py --INFOJSON!mrow.json
+--cmd python FNA2V.py --INFOJSON!mrow.json
 --cmd cd ../
