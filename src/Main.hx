@@ -2,6 +2,8 @@ import haxe.Json;
 import sys.FileSystem;
 import sys.io.File;
 
+using StringTools;
+
 class JsonType {
     public var frameNames:Null<String>;
     public var fps:Null<Int>;
@@ -74,7 +76,16 @@ class Main{
             }
             var finalFrameNameStuff:String = cookedJson.frameNames + "%0" + Std.string(cookedJson.frame0sAmt) + "d." + cookedJson.frameFormat;
 
-            Sys.command("ffmpeg", ["-framerate", Std.string(cookedJson.fps), "-i", finalFrameNameStuff, "-i", cookedJson.audioName, "-c:v", "libx264",  "-pix_fmt", "yuv420p", "-c:a", "aac", cookedJson.outFile]);
+            var args = ["-framerate", Std.string(cookedJson.fps), "-i", finalFrameNameStuff, "-c:v", "libx264",  "-pix_fmt", "yuv420p", "-c:a", "aac"];
+            if(cookedJson.outFile.endsWith(".mp4")){
+                args.push("-i");
+                args.push(cookedJson.audioName);
+            }
+            //if  "-i", cookedJson.audioName
+
+            args.push(cookedJson.outFile);
+
+            Sys.command("ffmpeg", args);
             if(shouldDOTDOTout){
                 Sys.setCwd("../");
             }
