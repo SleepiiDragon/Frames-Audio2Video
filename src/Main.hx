@@ -76,13 +76,19 @@ class Main{
             }
             var finalFrameNameStuff:String = cookedJson.frameNames + "%0" + Std.string(cookedJson.frame0sAmt) + "d." + cookedJson.frameFormat;
 
-            var args = ["-framerate", Std.string(cookedJson.fps), "-i", finalFrameNameStuff, "-c:v", "libx264",  "-pix_fmt", "yuv420p", "-c:a", "aac"];
+            var args = ["-framerate", Std.string(cookedJson.fps), "-i", finalFrameNameStuff];
             if(cookedJson.outFile.endsWith(".mp4")){
                 args.push("-i");
                 args.push(cookedJson.audioName);
+                args.push("-c:v");
+                args.push("libx264");
+                args.push("-pix_fmt");
+                args.push("yuv420p");
+                args.push("-c:a");
+                args.push("aac");
             }
             //if  "-i", cookedJson.audioName
-
+            //"-c:v", "libx264",  "-pix_fmt", "yuv420p", "-c:a", "aac"
             args.push(cookedJson.outFile);
 
             Sys.command("ffmpeg", args);
