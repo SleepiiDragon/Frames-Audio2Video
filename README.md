@@ -9,6 +9,10 @@ and lastly, yes the code is very ass
 `python FNA2V.py --INFOJSON![FileName].json`  
 ("[FileName]" should be your json file name)  
 
+# OPTIONAL ARGS:  
+--COMPRESS!0  
+compresses ur gif! only works for gif, might in the future make compression change how much it does by the number after the !  
+
 # EXAMPLE JSON:  
 ```json
 {
